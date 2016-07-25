@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumFrameworkSample", "src\SeleniumFrameworkSample\SeleniumFrameworkSample.csproj", "{7F0965DC-E176-4F00-A888-4A3B608B3A59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumFrameworkV2Sample", "src\SeleniumFrameworkSample\SeleniumFrameworkV2Sample.csproj", "{7F0965DC-E176-4F00-A888-4A3B608B3A59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
