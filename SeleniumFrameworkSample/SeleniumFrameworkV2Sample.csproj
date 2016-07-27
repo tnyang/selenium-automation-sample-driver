@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=0.1.10.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.0.1.10\lib\net45\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
+    <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=0.1.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.0.1.11\lib\net45\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
