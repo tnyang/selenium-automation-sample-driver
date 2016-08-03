@@ -7,6 +7,7 @@ namespace SeleniumFrameworkV2Sample
     [TestFixture]
     public class LoginTests : WebDriverTestBase
     {
+    
         [Test]
         [Category("Single_Positive")]
         public void ValidateSuccessfulLoginSinglePositive()

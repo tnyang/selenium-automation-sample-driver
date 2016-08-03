@@ -1,7 +1,7 @@
 ﻿{
   "Browser": "Chrome",
   "BrowserResolution": "Max",
-  "EnvironmentUrl": "https://hgtestweb12.healthgrades.com",
+  "EnvironmentUrl": "https://hgtestweb12.healthgrades.com.prodprod",
   "ImplicitlyWaitSeconds": "60",
   "ScreenshotOnError": "True"
 }
