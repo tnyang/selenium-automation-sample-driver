@@ -16,7 +16,6 @@ namespace SeleniumFrameworkV2Sample.PageObjects
         #endregion
         public void OpenPage(string pageUrl)
         {
-            Console.WriteLine("UUUUUUUUUUUUUUUUUUUUU: " + Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl);
             if (WebDriverTestBase.Driver != null)
             {
                 WebDriverTestBase.Driver.Navigate().GoToUrl(Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl);
