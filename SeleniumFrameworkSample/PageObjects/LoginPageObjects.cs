@@ -3,7 +3,7 @@ using SeleniumFrameworkV2Sample.Locators;
 
 namespace SeleniumFrameworkV2Sample.PageObjects
 {
-    class LoginPageObjects : BasePageObjects
+    public class LoginPageObjects : BasePageObjects
     {
         #region Elements
         private TextFieldObject userNameBox = new TextFieldObject("userNameBox", LoginPageLocators.UserNameBoxLocator);

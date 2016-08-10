@@ -1,7 +1,7 @@
 ﻿
 namespace SeleniumFrameworkV2Sample.PageObjects
 {
-    class HomePageObjects : BasePageObjects
+    public class HomePageObjects : BasePageObjects
     {
         #region Elements
 
