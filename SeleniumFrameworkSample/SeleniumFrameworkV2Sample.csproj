@@ -111,7 +111,7 @@
   <ItemGroup>
     <Compile Include="Locators\BaseLocators.cs" />
     <Compile Include="Locators\LoginPageLocators.cs" />
-    <Compile Include="LoginSharedSteps.cs" />
+    <Compile Include="GherkinSteps\LoginSharedSteps.cs" />
     <Compile Include="Tests\LoginTest.cs" />
     <Compile Include="PageObjects\BasePageObjects.cs" />
     <Compile Include="PageObjects\HomePageObjects.cs" />

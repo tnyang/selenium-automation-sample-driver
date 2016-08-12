@@ -1,6 +1,6 @@
 ﻿using Healthgrades.TestAutomation.SeleniumFramework.Core;
+using NUnit.Framework;
 using SeleniumFrameworkV2Sample.PageObjects;
-using SeleniumFrameworkV2Sample.Tests_Gherkin;
 using System;
 using TechTalk.SpecFlow;
 
@@ -12,35 +12,26 @@ namespace SeleniumFrameworkV2Sample
     public class LoginSharedSteps : WebDriverTestBase
     {
         protected LoginPageObjects loginPage;
+        protected HomePageObjects homePage;
 
         [Given(@"I am at the healthgrades Admins login page for environment '(.*)'")]
         public void GivenIAmAtTheHealthgradesAdminsLoginPageForEnvironment(string environment)
         {
-            Console.WriteLine("---------------@@@@@@@@@@@@@@@@@@@@@@@@ GivenIAmAtTheHealthgradesAdminsLoginPageForEnvironment");
             loginPage = new LoginPageObjects();
             loginPage.OpenPage("/#/Login");
-            Console.WriteLine("GivenIAmAtTheHealthgradesAdminsLoginPageForEnvironment");
         }
                
 
         [When(@"I enter email user id ""(.*)"" and password ""(.*)""")]
         public void WhenIEnterEmailUserIdAndPassword(string userName, string password)
         {
-            var homePage = loginPage.Login(userName, password);
-            Console.WriteLine("WhenIEnterEmailUserIdAndPassword");
+            homePage = loginPage.Login(userName, password);
         }
 
-
-        [Then(@"the result should be (.*) on the screen")]
-        public void ThenTheResultShouldBeOnTheScreen(int p0)
+        [Then(@"the homepage logo is present")]
+        public void ThenTheHomepageLogoIsPresent()
         {
-            Console.WriteLine("ThenTheResultShouldBeOnTheScreen");
-        }
-
-        [When(@"I clicked on the submit button")]
-        public void WhenIClickedOnTheSubmitButton()
-        {
-            ScenarioContext.Current.Pending();
+            Assert.IsTrue(homePage.isLogoLinkPresent(), "There is an issue with login.");
         }
 
 
