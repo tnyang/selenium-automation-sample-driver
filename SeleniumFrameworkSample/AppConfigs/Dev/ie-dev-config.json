@@ -1,0 +1,7 @@
+﻿{
+  "Browser": "InternetExplorer",
+  "BrowserResolution": "Max",
+  "EnvironmentUrl": "https://hgtestweb12.healthgrades.com",
+  "ImplicitlyWaitSeconds": "60",
+  "ScreenshotOnError": "True"
+}
