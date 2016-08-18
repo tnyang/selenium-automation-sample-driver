@@ -80,7 +80,7 @@ namespace SeleniumFrameworkV2Sample.Tests_Gherkin
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I am at the healthgrades Admins login page for environment \'hgtestweb12\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am at the healthgrades Admins login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.When(string.Format("I enter email user id \"{0}\" and password \"{1}\"", userid, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10

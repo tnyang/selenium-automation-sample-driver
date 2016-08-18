@@ -14,8 +14,8 @@ namespace SeleniumFrameworkV2Sample
         protected LoginPageObjects loginPage;
         protected HomePageObjects homePage;
 
-        [Given(@"I am at the healthgrades Admins login page for environment '(.*)'")]
-        public void GivenIAmAtTheHealthgradesAdminsLoginPageForEnvironment(string environment)
+        [Given(@"I am at the healthgrades Admins login page")]
+        public void GivenIAmAtTheHealthgradesAdminsLoginPage()
         {
             loginPage = new LoginPageObjects();
             loginPage.OpenPage("/#/Login");

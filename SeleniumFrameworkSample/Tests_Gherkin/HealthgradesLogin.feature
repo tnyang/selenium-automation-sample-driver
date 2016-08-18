@@ -5,7 +5,7 @@
 
 @login_positive
 Scenario Outline: Login to healthgrades Admin page successfully
-	Given I am at the healthgrades Admins login page for environment 'hgtestweb12'
+	Given I am at the healthgrades Admins login page
 	When  I enter email user id "<userid>" and password "<password>"
 	Then the homepage logo is present
 

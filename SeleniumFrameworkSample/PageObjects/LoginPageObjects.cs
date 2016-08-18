@@ -7,7 +7,7 @@ namespace SeleniumFrameworkV2Sample.PageObjects
     {
         #region Elements
         private TextFieldObject userNameBox = new TextFieldObject("userNameBox", LoginPageLocators.UserNameBoxLocator);
-        private TextFieldObject passwordBox = new TextFieldObject("passwordBox", LoginPageLocators.PasswordBoxLocator);
+        private PasswordTextFieldObject passwordBox = new PasswordTextFieldObject("passwordBox", LoginPageLocators.PasswordBoxLocator);
         private ButtonObject loginButton = new ButtonObject("loginButton", LoginPageLocators.LoginButtonLocator);
         private OtherObject unsuccessfulLoginLabel = new OtherObject("unsuccessfulLoginLabel", LoginPageLocators.UnsuccssfulTextMessageLocator);
         #endregion
