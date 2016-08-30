@@ -6,10 +6,10 @@ namespace SeleniumFrameworkV2Sample.PageObjects
     public class LoginPageObjects : BasePageObjects
     {
         #region Elements
-        private TextFieldObject userNameBox = new TextFieldObject("userNameBox", LoginPageLocators.UserNameBoxLocator);
-        private PasswordTextFieldObject passwordBox = new PasswordTextFieldObject("passwordBox", LoginPageLocators.PasswordBoxLocator);
-        private ButtonObject loginButton = new ButtonObject("loginButton", LoginPageLocators.LoginButtonLocator);
-        private OtherObject unsuccessfulLoginLabel = new OtherObject("unsuccessfulLoginLabel", LoginPageLocators.UnsuccssfulTextMessageLocator);
+        public TextFieldObject userNameBox = new TextFieldObject("userNameBox", LoginPageLocators.UserNameBoxLocator);
+        public PasswordTextFieldObject passwordBox = new PasswordTextFieldObject("passwordBox", LoginPageLocators.PasswordBoxLocator);
+        public ButtonObject loginButton = new ButtonObject("loginButton", LoginPageLocators.LoginButtonLocator);
+        public OtherObject unsuccessfulLoginLabel = new OtherObject("unsuccessfulLoginLabel", LoginPageLocators.UnsuccssfulTextMessageLocator);
         #endregion
 
         #region methods
