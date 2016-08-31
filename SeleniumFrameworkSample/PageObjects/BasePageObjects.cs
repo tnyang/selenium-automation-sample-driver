@@ -20,5 +20,9 @@ namespace SeleniumFrameworkV2Sample.PageObjects
                 WebDriverTestBase.Driver.Navigate().GoToUrl(Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl);
                 Console.WriteLine("Go to url: " + Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl);            
         }
+        public void OpenGooglePage(string pageUrl)
+        {
+            WebDriverTestBase.Driver.Navigate().GoToUrl("https://www.google.com/" + pageUrl);
+        }
     }
 }
