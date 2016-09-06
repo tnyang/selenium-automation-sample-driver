@@ -16,6 +16,7 @@ namespace SeleniumFrameworkV2Sample.PageObjects
         public HomePageObjects Login(string username, string password)
         {
             userNameBox.SetText(username);
+            userNameBox.GetText();
             passwordBox.SetText(password);
             loginButton.Click();
             return new HomePageObjects();
