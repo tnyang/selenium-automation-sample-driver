@@ -33,7 +33,7 @@ namespace SeleniumFrameworkV2Sample
             loginPage.OpenPage("/#/Login");
             var homePage = loginPage.Login(userName, password);
             Assert.IsTrue(loginPage.isUnsuccssfulTextMessageLocatorPresent(), "Negative login test works.");
-            Log.Info("----- End of Severity1 test -----\n\r");
+            Log.Info("----- End of Severity1 test -----\n\r"); 
         }
 
         [Test]
