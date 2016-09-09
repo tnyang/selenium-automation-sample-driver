@@ -1,5 +1,5 @@
 ﻿{
-  "Browser": "Firefox",
+  "Browser": "Chrome",
   "BrowserResolution": "Max",
   "EnvironmentUrl": "https://hgtestweb12.healthgrades.com",
   "ImplicitlyWaitSeconds": "60",
