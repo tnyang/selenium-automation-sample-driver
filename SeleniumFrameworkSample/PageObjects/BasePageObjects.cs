@@ -22,7 +22,7 @@ namespace SeleniumFrameworkV2Sample.PageObjects
         }
         public void OpenGooglePage(string pageUrl)
         {
-            WebDriverTestBase.Driver.Navigate().GoToUrl("https://www.google.com/" + pageUrl);
+            WebDriverTestBase.Driver.Navigate().GoToUrl("https://www.google.com/" + pageUrl);            
         }
     }
 }
