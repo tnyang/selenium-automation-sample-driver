@@ -1,17 +1,26 @@
 ﻿using OpenQA.Selenium;
 
 
-namespace SeleniumFrameworkV2Sample.Locators
+namespace Ams.Acceptance.Testing.Locators
 {
-    class BaseLocators
+    public class BaseLocators
     {
-        #region Header Element Locators
-        public static readonly By logoLinkLocator = By.Id("hgfui-flyout-button"); //changed id to make it an element which exists only after login:)
-        public static readonly By universalSearchLocator = By.XPath("//a[@href='#/Search']");
-        #endregion
+        public static By LinkByTextLocator(string text)
+        {
+            return By.XPath("//a[contains(text(),'" + text + "')]");
+        }
+        public static By LinkByHrefLocator(string text)
+        {
+            return By.XPath("//a[contains(@href, '"+text+"')]");
+        }
+        public static By TextLocator(string text)
+        {
+            return By.XPath("//*[contains(text(), '"+text+"')]");
+        }
+        public static By AnyElementLocator(string text)
+        {
+            return By.XPath("//*[contains(text(),'" + text + "')]");
+        }
 
-        #region Footer Element Locators
-        public static readonly By loadingBarLocator = By.XPath("//div[@class='loading-container']");
-        #endregion
     }
 }

@@ -3,5 +3,11 @@
   "BrowserResolution": "Max",
   "EnvironmentUrl": "https://hgtestweb12.healthgrades.com",
   "ImplicitlyWaitSeconds": "60",
-  "ScreenshotOnError": "True"
+  "ScreenshotOnError": "True",
+  "baseOASServiceUrl": "http://hgtestwebsvc1.healthgrades.com/svc/v3_0/oas",
+  "mhdstageUrl": "https://mhdstage.mhddemo.com",
+  "hangfireUrl": "http://s-dn-dv-hfir-01.healthgrades.com",
+  "filePath": "C:\\Test",
+  "solrMasterUri": "http://hgsolr2testmstr.healthgrades.com:8983/",
+  "solrSlaveUri": "http://hgsolr2testsl.healthgrades.com:8983/"
 }
