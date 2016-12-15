@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{340C7C99-70F3-4665-BC38-709473DD1D60}"
 	ProjectSection(SolutionItems) = preProject
@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Nuget.config = Nuget.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumFrameworkV2Sample", "SeleniumFrameworkSample\SeleniumFrameworkV2Sample.csproj", "{7F0965DC-E176-4F00-A888-4A3B608B3A59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SideBySideSeleniumCode", "SeleniumFrameworkSample\SideBySideSeleniumCode.csproj", "{7F0965DC-E176-4F00-A888-4A3B608B3A59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
