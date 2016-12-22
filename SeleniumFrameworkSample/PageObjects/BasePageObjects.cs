@@ -15,7 +15,6 @@ namespace SeleniumFrameworkV2Sample.PageObjects
         public OtherObject loadingBar = new OtherObject("loadingBar", BaseLocators.loadingBarLocator);
         #endregion
 
-
         public void OpenPage(string pageUrl)
         {
                 WebDriverTestBase.Driver.Navigate().GoToUrl(Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl);
