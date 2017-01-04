@@ -1,0 +1,20 @@
+﻿{
+  "EnvironmentUrl": "https://hgtestweb12.healthgrades.com",
+  "ImplicitlyWaitSeconds": "60",
+  "ScreenshotOnError": "True",
+
+  //SauceLabs config
+  "UsingSauceLabs": "true",
+  "Browser": "Chrome",
+  //Desktop config
+  "RunOnDesktop": "true",
+  "Platform": "Windows 10",
+  "BrowserVersion": "11.103",
+  "BrowserResolution": "Max",
+  //Device config
+  "RunOnDevice": "false",
+  "DeviceName": "iPhone Simulator",
+  "DeviceOrientation": "portrait",
+  "PlatformName": "iOS",
+  "PlatformVersion": "9.3"
+}

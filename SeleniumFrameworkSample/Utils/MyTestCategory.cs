@@ -11,5 +11,11 @@ namespace SeleniumFrameworkV2Sample.Utils
         public const string NEGATIVE = "NEGATIVE";
         public const string GOOGLE_TEST_FOR_IE = "GOOGLE_TEST_FOR_IE";
 
+        public const string ONE = "ONE";
+        public const string TWO = "TWO";
+        public const string THREE = "THREE";
+
+        public const string SAUCELABS_TEST = "SAUCELABS_TEST";
+      
     }
 }
