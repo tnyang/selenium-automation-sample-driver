@@ -9,12 +9,14 @@
   //Desktop config
   "RunOnDesktop": "true",
   "Platform": "Windows 10",
-  "BrowserVersion": "11.103",
+  "BrowserVersion": "53.0",
   "BrowserResolution": "Max",
   //Device config
   "RunOnDevice": "false",
   "DeviceName": "iPhone Simulator",
   "DeviceOrientation": "portrait",
   "PlatformName": "iOS",
-  "PlatformVersion": "9.3"
+  "PlatformVersion": "9.3",
+  "SauceLabsUsername": "svc_saucelabs",
+  "SauceLabsAccessKey": "a251c73c-c179-448a-b416-398bf48df13b"
 }
