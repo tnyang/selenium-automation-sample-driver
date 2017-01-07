@@ -299,5 +299,129 @@ namespace SeleniumFrameworkV2Sample.Tests
         }
     }
 
-    
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_22 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive22()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_23 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive23()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_24 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive24()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_25 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive25()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_26 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive26()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_27 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive27()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_28 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive28()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_29 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive29()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
+
+    [TestFixture]
+    [Parallelizable]
+    public class TestParallel_30 : WebDriverTestBase
+    {
+        [Test]
+        [Category(MyTestCategory.SAUCELABS_TEST)]
+        public void SauceLabValidateSuccessfulLoginPositive30()
+        {
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenGooglePage("/");
+            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+        }
+    }
 }  // namespace
