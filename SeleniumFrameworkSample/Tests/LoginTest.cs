@@ -149,7 +149,7 @@ namespace SeleniumFrameworkV2Sample
         public void GoogleTestForIE()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
+            loginPage.OpenGooglePage("/"); 
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
 
