@@ -2,6 +2,7 @@
 using Healthgrades.TestAutomation.SeleniumFramework.Core;
 using SeleniumFrameworkV2Sample.PageObjects;
 using SeleniumFrameworkV2Sample.Utils;
+using System.Threading;
 
 namespace SeleniumFrameworkV2Sample.Tests
 {
@@ -14,7 +15,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive1()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -28,7 +29,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive2()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -42,7 +43,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive3()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -56,7 +57,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive4()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -70,7 +71,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive5()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -84,7 +85,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive6()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -98,7 +99,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive7()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -112,7 +113,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive8()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -126,7 +127,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive9()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -140,7 +141,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive10()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -154,7 +155,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive11()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -168,7 +169,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive12()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -182,7 +183,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive13()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -196,7 +197,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive14()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -210,7 +211,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive15()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -224,7 +225,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive16()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -238,7 +239,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive17()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -252,7 +253,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive18()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -266,7 +267,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive19()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -280,7 +281,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive20()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -294,7 +295,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive21()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000); 
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -308,7 +309,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive22()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -322,7 +323,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive23()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -336,7 +337,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive24()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -350,7 +351,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive25()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -364,7 +365,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive26()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -378,7 +379,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive27()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -392,7 +393,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive28()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -406,7 +407,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive29()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
@@ -420,7 +421,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         public void SauceLabValidateSuccessfulLoginPositive30()
         {
             var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/");
+            loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
         }
     }
