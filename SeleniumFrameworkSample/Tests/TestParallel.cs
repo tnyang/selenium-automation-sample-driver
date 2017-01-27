@@ -42,7 +42,7 @@ namespace SeleniumFrameworkV2Sample.Tests
         [Category(MyTestCategory.SAUCELABS_TEST)]
         public void SauceLabValidateSuccessfulLoginPositive3()
         {
-            //
+            ////
             var loginPage = new LoginPageObjects();
             loginPage.OpenGooglePage("/"); Thread.Sleep(15000);
             Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
