@@ -48,6 +48,9 @@ namespace SeleniumFrameworkV2Sample
             loginPage.OpenPage("/#/Login");
             var homePage = loginPage.Login(userName, password);
             Assert.IsTrue(homePage.isLogoLinkPresent(), "There is an issue with login.");
+            string sourcecode = homePage.GetViewSourceCode();
+            System.Console.WriteLine("SOURCE CODE:");
+            System.Console.WriteLine(sourcecode);
             Log.Info("----- End of Positive test 1 -----\n\r");
         }
 

@@ -12,6 +12,10 @@ namespace SeleniumFrameworkV2Sample.PageObjects
             return logoLink.IsElementDisplayed();
         }
 
+        public string GetViewSourceCode()
+        {
+            return logoLink.GetAttribute("innerHTML");
+        }
         #endregion
 
     }
