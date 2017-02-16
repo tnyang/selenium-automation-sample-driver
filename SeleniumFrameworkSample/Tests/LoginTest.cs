@@ -42,7 +42,7 @@ namespace SeleniumFrameworkV2Sample
         [Category(MyTestCategory.NIGHTLY_RUN)]
         public void ValidateSuccessfulLoginSinglePositive()
         {
-            string userName = "mbadyelkhan@healthgrades.com";
+            string userName = "mbadyelkhan@healthgrades.com"; 
             string password = "Abcd1234!";
             var loginPage = new LoginPageObjects();
             loginPage.OpenPage("/#/Login");
