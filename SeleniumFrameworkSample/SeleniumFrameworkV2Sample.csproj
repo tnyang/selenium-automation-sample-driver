@@ -38,8 +38,8 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=0.1.59.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.0.1.59\lib\net45\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
+    <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=0.1.69.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.0.1.69\lib\net45\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
@@ -116,12 +116,12 @@
     <Compile Include="Locators\BaseLocators.cs" />
     <Compile Include="Locators\LoginPageLocators.cs" />
     <Compile Include="GherkinSteps\LoginSharedSteps.cs" />
+    <Compile Include="SqlDatabase\HealthGradesWebDbNotificationTblQueries.cs" />
     <Compile Include="Tests\LoginTest.cs" />
     <Compile Include="PageObjects\BasePageObjects.cs" />
     <Compile Include="PageObjects\HomePageObjects.cs" />
     <Compile Include="PageObjects\LoginPageObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\TestParallel.cs" />
     <Compile Include="Tests_Gherkin\HealthgradesLogin.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -129,6 +129,7 @@
     </Compile>
     <Compile Include="Tests_Gherkin\SharedSteps.cs" />
     <Compile Include="Utils\MyTestCategory.cs" />
+    <Compile Include="Utils\SqlDatabaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

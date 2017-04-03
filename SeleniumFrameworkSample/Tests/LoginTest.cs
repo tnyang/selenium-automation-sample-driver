@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using SeleniumFrameworkV2Sample.PageObjects;
 using SeleniumFrameworkV2Sample.Utils;
+using SeleniumFrameworkV2Sample.SqlDatabase;
 
 namespace SeleniumFrameworkV2Sample
 {
@@ -151,9 +152,16 @@ namespace SeleniumFrameworkV2Sample
         [Category(MyTestCategory.GOOGLE_TEST_FOR_IE)]
         public void GoogleTestForIE()
         {
-            var loginPage = new LoginPageObjects();
-            loginPage.OpenGooglePage("/"); 
-            Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+            //var loginPage = new LoginPageObjects();
+            //loginPage.OpenGooglePage("/"); 
+            //Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
+
+            SqlDatabaseHelper sqlHelper = new SqlDatabaseHelper();
+            HealthGradesWebDbNotificationTblQueries queries = new HealthGradesWebDbNotificationTblQueries();
+
+            var list = sqlHelper.ExecuteSelectQuery(queries.selectNotificationsBasedOnAppointmentId("36693"));
+            string firstOne = list[0]["NotificationID"];
+            var update = sqlHelper.ExecuteUpdateQuery(queries.updateNotificationSetDate("31903", "36693"));
         }
 
         
