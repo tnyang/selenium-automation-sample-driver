@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
@@ -11,6 +11,7 @@ namespace SeleniumFrameworkV2Sample.Utils
     {
         //Gets from the config file
         private string connectionString = "Data Source=hgtestdb1;Initial Catalog=HealthGradesWeb;User ID=webuser;Password=dog.bone;";
+        //private string connectionString = ConfigurationManager.ConnectionStrings["TESTDB"].ConnectionString;
 
         public Dictionary<string, string>[] ExecuteSelectQuery(string selectQuery)
         {
