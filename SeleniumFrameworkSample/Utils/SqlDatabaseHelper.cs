@@ -43,6 +43,7 @@ namespace SeleniumFrameworkV2Sample.Utils
                     myConnection.Open();
 
                     SqlDataReader reader = myCommand.ExecuteReader();
+                    Console.WriteLine("Provided query executed successfully: "+selectQuery);
                     //Get column names
                     for (int i = 0; i < reader.FieldCount; i++)
                     {
@@ -72,17 +73,17 @@ namespace SeleniumFrameworkV2Sample.Utils
             }
         }
 
-        public string ExecuteUpdateQuery(string updateQuery)
+        public string ExecuteUpdateOrDeleteQuery(string query)
         {
             using (SqlConnection myConnection = new SqlConnection(connectionString))
             {
                 try
                 {
-                    SqlCommand myCommand = new SqlCommand(updateQuery, myConnection);
+                    SqlCommand myCommand = new SqlCommand(query, myConnection);
                     myConnection.Open();
                     var numOfRowsAffected = myCommand.ExecuteNonQuery();
                     myConnection.Close();
-                    return "Query executed successfully. (" + numOfRowsAffected + " row(s) affected)";
+                    return "Query executed successfully. (" + numOfRowsAffected + " row(s) affected). Query: "+query;
                 }
                 catch(Exception e)
                 {
@@ -91,24 +92,6 @@ namespace SeleniumFrameworkV2Sample.Utils
               
            }
         }
-        public string ExecuteDeleteQuery(string updateQuery)
-        {
-            using (SqlConnection myConnection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    SqlCommand myCommand = new SqlCommand(updateQuery, myConnection);
-                    myConnection.Open();
-                    var numOfRowsAffected = myCommand.ExecuteNonQuery();
-                    myConnection.Close();
-                    return "Query executed successfully. (" + numOfRowsAffected + " row(s) affected)";
-                }
-                catch (Exception e)
-                {
-                    throw new Exception(e.Message);
-                }
 
-            }
-        }
     }
 }

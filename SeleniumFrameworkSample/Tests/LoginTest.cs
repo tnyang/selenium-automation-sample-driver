@@ -153,18 +153,32 @@ namespace SeleniumFrameworkV2Sample
         public void GoogleTestForIE()
         {
             //var loginPage = new LoginPageObjects();
-            //loginPage.OpenGooglePage("/"); 
+            //loginPage.OpenGooglePage("/");
             //Log.Info("----- End of Positive GoogleTestForIE -----\n\r");
 
+            //SQL tests
             SqlDatabaseHelper sqlHelper = new SqlDatabaseHelper();
             HealthGradesWebDbNotificationTblQueries queries = new HealthGradesWebDbNotificationTblQueries();
 
             var list = sqlHelper.ExecuteSelectQuery(queries.selectNotificationsBasedOnAppointmentId("36693"));
             string firstOne = list[0]["NotificationID"];
-            var update = sqlHelper.ExecuteUpdateQuery(queries.updateNotificationSetDate("31903", "36693"));
+            var update = sqlHelper.ExecuteUpdateOrDeleteQuery(queries.updateNotificationSetDate("31903", "36693"));
+
+            ////Solr tests
+            //HttpRequestHelper solrHelper = new HttpRequestHelper();
+            //solrHelper.GetSolrData("/solr/autosuggest/select?q=*%3A*&wt=json&indent=true");
         }
 
-        
+        [Test]
+        [Category("SQLTest")]
+        public void SQLSampleTest()
+        {
+            SqlDatabaseHelper sqlHelper = new SqlDatabaseHelper();
+            HealthGradesWebDbNotificationTblQueries myQueries = new HealthGradesWebDbNotificationTblQueries();
+            var countList = sqlHelper.ExecuteSelectQuery(myQueries.GetNotificationCount());
+            var count = countList[0]["counts"];
+            Assert.AreEqual(count, "11193");
+        }
 
 
     }
