@@ -10,8 +10,8 @@ namespace SeleniumFrameworkV2Sample.Utils
     public class SqlDatabaseHelper
     {
         //Gets from the config file
-        private string connectionString = "Data Source=hgtestdb1;Initial Catalog=HealthGradesWeb;User ID=webuser;Password=dog.bone;";
-        //private string connectionString = ConfigurationManager.ConnectionStrings["TESTDB"].ConnectionString;
+        //private string connectionString = "Data Source=hgtestdb1;Initial Catalog=HealthGradesWeb;User ID=webuser;Password=dog.bone;";
+        private string connectionString = ConfigurationManager.ConnectionStrings["TESTDB"].ConnectionString;
 
         public Dictionary<string, string>[] ExecuteSelectQuery(string selectQuery)
         {
