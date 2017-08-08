@@ -38,8 +38,12 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=0.2.17.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.0.2.17\lib\net45\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
+    <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.1.0.2\lib\net45\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
