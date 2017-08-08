@@ -54,6 +54,19 @@ namespace SeleniumFrameworkV2Sample
             System.Console.WriteLine(sourcecode);
             Log.Info("----- End of Positive test 1 -----\n\r");
         }
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        public void ValidateSuccessfulLoginSinglePositive2()
+        {
+            //This test passes
+        }
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        public void ValidateSuccessfulLoginSinglePositive3()
+        {
+            //This test fails
+            Assert.IsTrue(false, "Always fail");
+        }
 
         [Test]
         [Category(MyTestCategory.SEVERITY_1)]
