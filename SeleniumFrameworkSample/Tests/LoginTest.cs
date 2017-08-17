@@ -193,6 +193,27 @@ namespace SeleniumFrameworkV2Sample
             Assert.AreEqual(count, "11193");
         }
 
+        [Test]
+        [Category("TestChromeLoad")]
+        public void TestChromeLoad1()
+        {
+            string userName = "mbadyelkhan@healthgrades.com";
+            string password = "Abcd1234!";
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenPage("");
+            Log.Info("----- End of TestChromeLoad test 1 -----\n\r");
+        }
+        [Test]
+        [Category("TestChromeLoad")]
+        public void TestChromeLoad2()
+        {
+            string userName = "mbadyelkhan@healthgrades.com";
+            string password = "Abcd1234!";
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenPage("");
+            Log.Info("----- End of TestChromeLoad test 1 -----\n\r");
+        }
+
 
     }
 }
