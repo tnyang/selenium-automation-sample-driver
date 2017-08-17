@@ -76,7 +76,7 @@ namespace SeleniumFrameworkV2Sample
             string userName = "mbadyelkhan@healthgrades.com";
             string password = "Abcd1234?";
             var loginPage = new LoginPageObjects();
-            loginPage.OpenPage("/#/Login");
+            loginPage.OpenPage("");
             var homePage = loginPage.Login(userName, password);
             Assert.IsTrue(loginPage.isUnsuccssfulTextMessageLocatorPresent(), "Negative login test works.");
             Log.Info("----- End of Severity1 test -----\n\r");
@@ -201,6 +201,7 @@ namespace SeleniumFrameworkV2Sample
             string password = "Abcd1234!";
             var loginPage = new LoginPageObjects();
             loginPage.OpenPage("");
+            Assert.IsTrue(loginPage.DoesSearchFieldPresent());
             Log.Info("----- End of TestChromeLoad test 1 -----\n\r");
         }
         [Test]
@@ -211,6 +212,7 @@ namespace SeleniumFrameworkV2Sample
             string password = "Abcd1234!";
             var loginPage = new LoginPageObjects();
             loginPage.OpenPage("");
+            Assert.IsTrue(loginPage.DoesSearchFieldPresent());
             Log.Info("----- End of TestChromeLoad test 1 -----\n\r");
         }
 

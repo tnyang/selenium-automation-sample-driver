@@ -13,6 +13,7 @@ namespace SeleniumFrameworkV2Sample.PageObjects
 
         #region Footer Element Objects
         public OtherObject loadingBar = new OtherObject("loadingBar", BaseLocators.loadingBarLocator);
+        
         #endregion
 
         public void OpenPage(string pageUrl)
@@ -23,6 +24,10 @@ namespace SeleniumFrameworkV2Sample.PageObjects
         public void OpenGooglePage(string pageUrl)
         {
             WebDriverTestBase.Driver.Navigate().GoToUrl("https://www.google.com/" + pageUrl);            
+        }
+        public bool DoesSearchFieldPresent()
+        {
+            return universalSearch.IsElementDisplayed();
         }
     }
 }
