@@ -195,7 +195,7 @@ namespace SeleniumFrameworkV2Sample
 
         [Test]
         [Category("TestChromeLoad")]
-        public void ValidateSuccessfulLoginSinglePositive()
+        public void TestChromeLoad()
         {
             string userName = "mbadyelkhan@healthgrades.com";
             string password = "Abcd1234!";
@@ -206,7 +206,7 @@ namespace SeleniumFrameworkV2Sample
         }
         [Test]
         [Category("TestChromeLoad")]
-        public void ValidateSuccessfulLoginSinglePositive2()
+        public void TestChromeLoad2()
         {
             string userName = "mbadyelkhan@healthgrades.com";
             string password = "Abcd1234!";
