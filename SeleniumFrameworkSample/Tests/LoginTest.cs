@@ -65,7 +65,7 @@ namespace SeleniumFrameworkV2Sample
         public void ValidateSuccessfulLoginSinglePositive3()
         {
             //This test fails
-            Assert.IsTrue(true, "Always fail");
+            Assert.IsTrue(false, "Always fail");
         }
 
         [Test]
