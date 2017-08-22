@@ -38,35 +38,35 @@ namespace SeleniumFrameworkV2Sample
         }
 
 
-        //[Test]
-        //[Category(MyTestCategory.SINGLE_POSITIVE)]
-        //[Category(MyTestCategory.NIGHTLY_RUN)]
-        //public void ValidateSuccessfulLoginSinglePositive()
-        //{
-        //    string userName = "mbadyelkhan@healthgrades.com"; 
-        //    string password = "Abcd1234!";
-        //    var loginPage = new LoginPageObjects();
-        //    loginPage.OpenPage("/#/Login");
-        //    var homePage = loginPage.Login(userName, password);
-        //    Assert.IsTrue(homePage.isLogoLinkPresent(), "There is an issue with login.");
-        //    string sourcecode = homePage.GetViewSourceCode();
-        //    System.Console.WriteLine("SOURCE CODE:");
-        //    System.Console.WriteLine(sourcecode);
-        //    Log.Info("----- End of Positive test 1 -----\n\r");
-        //}
-        //[Test]
-        //[Category(MyTestCategory.SINGLE_POSITIVE)]
-        //public void ValidateSuccessfulLoginSinglePositive2()
-        //{
-        //    //This test passes
-        //}
-        //[Test]
-        //[Category(MyTestCategory.SINGLE_POSITIVE)]
-        //public void ValidateSuccessfulLoginSinglePositive3()
-        //{
-        //    //This test fails
-        //    Assert.IsTrue(true, "Always fail");
-        //}
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        [Category(MyTestCategory.NIGHTLY_RUN)]
+        public void ValidateSuccessfulLoginSinglePositive()
+        {
+            string userName = "mbadyelkhan@healthgrades.com";
+            string password = "Abcd1234!";
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenPage("/#/Login");
+            var homePage = loginPage.Login(userName, password);
+            Assert.IsTrue(homePage.isLogoLinkPresent(), "There is an issue with login.");
+            string sourcecode = homePage.GetViewSourceCode();
+            System.Console.WriteLine("SOURCE CODE:");
+            System.Console.WriteLine(sourcecode);
+            Log.Info("----- End of Positive test 1 -----\n\r");
+        }
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        public void ValidateSuccessfulLoginSinglePositive2()
+        {
+            //This test passes
+        }
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        public void ValidateSuccessfulLoginSinglePositive3()
+        {
+            //This test fails
+            Assert.IsTrue(true, "Always fail");
+        }
 
         [Test]
         [Category(MyTestCategory.SEVERITY_1)]
