@@ -195,6 +195,7 @@ namespace SeleniumFrameworkV2Sample
 
         [Test]
         [Category("TestChromeLoad")]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
         public void TestChromeLoad()
         {
             string userName = "mbadyelkhan@healthgrades.com";
@@ -206,6 +207,7 @@ namespace SeleniumFrameworkV2Sample
         }
         [Test]
         [Category("TestChromeLoad")]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
         public void TestChromeLoad2()
         {
             string userName = "mbadyelkhan@healthgrades.com";
