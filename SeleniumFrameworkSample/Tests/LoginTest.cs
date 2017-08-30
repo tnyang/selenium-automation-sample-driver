@@ -39,6 +39,19 @@ namespace SeleniumFrameworkV2Sample
 
 
         [Test]
+        [Category(MyTestCategory.POSITIVE)]
+        public void ValidateGroupDirectory()
+        {
+            string userName = "mbadyelkhan@healthgrades.com";
+            string password = "Abcd1234!";
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenPage("/group-directory");
+            //var homePage = loginPage.Login(userName, password);
+            //Assert.IsTrue(homePage.isLogoLinkPresent(), "There is an issue with login.");
+            Log.Info("----- End of Positive test 2 -----\n\r");
+        }
+
+        [Test]
         [Category(MyTestCategory.SINGLE_POSITIVE)]
         [Category(MyTestCategory.NIGHTLY_RUN)]
         public void ValidateSuccessfulLoginSinglePositive()
