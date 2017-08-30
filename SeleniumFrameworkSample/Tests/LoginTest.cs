@@ -56,7 +56,7 @@ namespace SeleniumFrameworkV2Sample
         [Category(MyTestCategory.NIGHTLY_RUN)]
         public void ValidateSuccessfulLoginSinglePositive()
         {
-            string userName = "mbadyelkhan@healthgrades.com"; 
+            string userName = "mbadyelkhan@healthgrades.com";
             string password = "Abcd1234!";
             var loginPage = new LoginPageObjects();
             loginPage.OpenPage("/#/Login");
@@ -67,6 +67,19 @@ namespace SeleniumFrameworkV2Sample
             System.Console.WriteLine(sourcecode);
             Log.Info("----- End of Positive test 1 -----\n\r");
         }
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        public void ValidateSuccessfulLoginSinglePositive22()
+        {
+            //This test passes
+        }
+        [Test]
+        [Category(MyTestCategory.SINGLE_POSITIVE)]
+        public void ValidateSuccessfulLoginSinglePositive33()
+        {
+            //This test fails
+            Assert.IsTrue(true, "Always fail");
+        }
 
         [Test]
         [Category(MyTestCategory.SEVERITY_1)]
@@ -76,7 +89,7 @@ namespace SeleniumFrameworkV2Sample
             string userName = "mbadyelkhan@healthgrades.com";
             string password = "Abcd1234?";
             var loginPage = new LoginPageObjects();
-            loginPage.OpenPage("/#/Login");
+            loginPage.OpenPage("");
             var homePage = loginPage.Login(userName, password);
             Assert.IsTrue(loginPage.isUnsuccssfulTextMessageLocatorPresent(), "Negative login test works.");
             Log.Info("----- End of Severity1 test -----\n\r");
@@ -191,6 +204,29 @@ namespace SeleniumFrameworkV2Sample
             var countList = sqlHelper.ExecuteSelectQuery(myQueries.GetNotificationCount());
             var count = countList[0]["counts"];
             Assert.AreEqual(count, "11193");
+        }
+
+        [Test]
+        [Category("TestChromeLoad")]
+        public void TestChromeLoad()
+        {
+            string userName = "mbadyelkhan@healthgrades.com";
+            string password = "Abcd1234!";
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenPage("");
+            Assert.IsTrue(loginPage.DoesSearchFieldPresent());
+            Log.Info("----- End of TestChromeLoad test 1 -----\n\r");
+        }
+        [Test]
+        [Category("TestChromeLoad")]
+        public void TestChromeLoad2()
+        {
+            string userName = "mbadyelkhan@healthgrades.com";
+            string password = "Abcd1234!";
+            var loginPage = new LoginPageObjects();
+            loginPage.OpenPage("");
+            Assert.IsTrue(loginPage.DoesSearchFieldPresent());
+            Log.Info("----- End of TestChromeLoad test 1 -----\n\r");
         }
 
 
