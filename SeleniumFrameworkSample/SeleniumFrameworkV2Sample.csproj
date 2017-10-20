@@ -91,11 +91,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Locators\BaseLocators.cs" />
+    <Compile Include="Locators\Guru99LoginPageLocators.cs" />
+    <Compile Include="Locators\Guru99HomePageLocators.cs" />
     <Compile Include="Locators\LoginPageLocators.cs" />
     <Compile Include="GherkinSteps\LoginSharedSteps.cs" />
+    <Compile Include="PageObjects\Guru99HomePage.cs" />
+    <Compile Include="PageObjects\Guru99LoginPage.cs" />
     <Compile Include="SqlDatabase\HealthGradesWebDbNotificationTblQueries.cs" />
     <Compile Include="SqlDatabase\SampleQueries.cs" />
-    <Compile Include="Tests\LoginTest.cs" />
+    <Compile Include="Tests\Guru99Tests.cs" />
+    <Compile Include="Tests\LoginTestNoLongerWorks.cs" />
     <Compile Include="PageObjects\BasePageObjects.cs" />
     <Compile Include="PageObjects\HomePageObjects.cs" />
     <Compile Include="PageObjects\LoginPageObjects.cs" />

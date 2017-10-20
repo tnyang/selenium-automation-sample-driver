@@ -7,37 +7,9 @@ using SeleniumFrameworkV2Sample.SqlDatabase;
 namespace SeleniumFrameworkV2Sample
 {
     [TestFixture]
-    public class LoginTests : WebDriverTestBase
+    public class LoginTestNoLongerWorks : WebDriverTestBase
     {
-        [Test]
-        [Category(MyTestCategory.ONE)]
-        public void test1()
-        {
-            System.Console.WriteLine("------------------test1");
-        }
-
-        [Test]
-        [Category(MyTestCategory.ONE),Category(MyTestCategory.TWO)]
-        public void test2()
-        {
-            System.Console.WriteLine("------------------test2");
-        }
-        [Test]
-        //[Category("one")]
-        [Category(MyTestCategory.THREE)]
-        public void test3()
-        {
-            System.Console.WriteLine("------------------test3");
-        }
-        [Test]
-        [Category(MyTestCategory.ONE)]
-        [Category(MyTestCategory.TWO)]
-        public void test4()
-        {
-            System.Console.WriteLine("------------------test4");
-        }
-
-
+   
         [Test]
         [Category(MyTestCategory.POSITIVE)]
         public void ValidateGroupDirectory()
