@@ -90,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlObjects\OtherObjectPage.cs" />
     <Compile Include="HtmlObjects\HyperLinkPage.cs" />
     <Compile Include="HtmlObjects\PasswordTextField.cs" />
     <Compile Include="HtmlObjects\TextField.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="HtmlObjects\CheckBoxPage.cs" />
     <Compile Include="HtmlObjects\RadioButton.cs" />
     <Compile Include="HtmlObjects\ButtonPage.cs" />
+    <Compile Include="HtmlUnitTests\OtherObjectTests.cs" />
     <Compile Include="HtmlUnitTests\HyperLinkTests.cs" />
     <Compile Include="HtmlUnitTests\CheckBoxTests.cs" />
     <Compile Include="HtmlUnitTests\PasswordTextFieldTests.cs" />
