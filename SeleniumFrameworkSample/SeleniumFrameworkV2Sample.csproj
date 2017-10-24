@@ -90,6 +90,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HtmlObjects\HyperLinkPage.cs" />
+    <Compile Include="HtmlObjects\PasswordTextField.cs" />
+    <Compile Include="HtmlObjects\TextField.cs" />
+    <Compile Include="HtmlObjects\ListBoxPage.cs" />
+    <Compile Include="HtmlObjects\DropDownListPage.cs" />
+    <Compile Include="HtmlObjects\CheckBoxPage.cs" />
+    <Compile Include="HtmlObjects\RadioButton.cs" />
+    <Compile Include="HtmlObjects\ButtonPage.cs" />
+    <Compile Include="HtmlUnitTests\HyperLinkTests.cs" />
+    <Compile Include="HtmlUnitTests\CheckBoxTests.cs" />
+    <Compile Include="HtmlUnitTests\PasswordTextFieldTests.cs" />
+    <Compile Include="HtmlUnitTests\TextFieldTests.cs" />
+    <Compile Include="HtmlUnitTests\ListBoxTests.cs" />
+    <Compile Include="HtmlUnitTests\DropDownListTests.cs" />
+    <Compile Include="HtmlUnitTests\RadioButtonTests.cs" />
+    <Compile Include="HtmlUnitTests\ButtonTests.cs" />
     <Compile Include="Locators\BaseLocators.cs" />
     <Compile Include="Locators\Guru99LoginPageLocators.cs" />
     <Compile Include="Locators\Guru99HomePageLocators.cs" />
@@ -150,6 +166,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="AppConfigs\README.txt" />
+    <Content Include="Html\MainPage.html" />
+    <Content Include="Html\HyperLinkPage.html" />
+    <Content Include="Html\DropDownListPage.html" />
+    <Content Include="Html\ListBoxPage.html" />
+    <Content Include="Html\ButtonPage.html" />
+    <Content Include="Html\RadioButtonPage.html" />
+    <Content Include="Html\CheckBoxPage.html" />
+    <Content Include="Html\PasswordTextFieldPage.html" />
+    <Content Include="Html\TextFieldPage.html" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
