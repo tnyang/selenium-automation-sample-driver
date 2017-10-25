@@ -3,6 +3,8 @@ using NUnit.Framework;
 
 namespace SeleniumFrameworkV2Sample
 {
+    // ************ NOTE: NEED TO FINISH UNIT TESTS FOR THIS CLASS.....................
+
     [TestFixture]
     public class OtherObjectTests : WebDriverTestBase
     {
