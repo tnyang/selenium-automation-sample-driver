@@ -14,7 +14,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.RadioButton htmlRadio = new HtmlObjects.RadioButton();
 
-            htmlRadio.OpenPage("/RadioButtonPage.html");
+            htmlRadio.OpenHtmlPage("RadioButtonPage.html");
 
             bool selected = htmlRadio.IsSelected();
            Assert.AreEqual(selected, false, "The radio button isSelect() was value is wrong: " + selected + " expected: " + "false");           
@@ -26,7 +26,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.RadioButton htmlRadio = new HtmlObjects.RadioButton();
 
-            htmlRadio.OpenPage("/RadioButtonPage.html");
+            htmlRadio.OpenHtmlPage("RadioButtonPage.html");
 
             htmlRadio.Select();
 

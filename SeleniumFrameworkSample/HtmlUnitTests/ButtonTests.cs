@@ -12,7 +12,7 @@ namespace SeleniumFrameworkV2Sample
         public void ButtonClick()
         {
             HtmlObjects.ButtonPage htmlButton = new HtmlObjects.ButtonPage();
-            htmlButton.OpenPage("/ButtonPage.html");
+            htmlButton.OpenHtmlPage("ButtonPage.html");
             htmlButton.Click();
 
             string displaytext = htmlButton.getDisplayedText();

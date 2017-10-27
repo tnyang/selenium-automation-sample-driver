@@ -13,7 +13,7 @@ namespace SeleniumFrameworkV2Sample
         public void GetHyperLinkText()
         {
             HtmlObjects.HyperLinkPage htmlHyperlink = new HtmlObjects.HyperLinkPage();
-            htmlHyperlink.OpenPage("/HyperLinkPage.html");
+            htmlHyperlink.OpenHtmlPage("HyperLinkPage.html");
             string ahref = htmlHyperlink.GetHyperLinkText();
 
             Assert.AreEqual(ahref, "https://www.google.com/", "The hyperlink GetHyperLinkText() did not return the correct text: " + ahref + " expected: " + "https://www.google.com/");

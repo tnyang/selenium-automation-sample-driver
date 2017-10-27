@@ -15,7 +15,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.ListBoxPage htmlListbox = new HtmlObjects.ListBoxPage();
 
-            htmlListbox.OpenPage("/ListBoxPage.html");
+            htmlListbox.OpenHtmlPage("ListBoxPage.html");
 
             string selected = htmlListbox.GetSelectedElement();
            Assert.AreEqual(selected, "apple", "The dropdownlist GetSelectedElement() was value is wrong: " + selected + " expected: " + "apple");           
@@ -27,7 +27,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.ListBoxPage htmlListbox = new HtmlObjects.ListBoxPage();
 
-            htmlListbox.OpenPage("/ListBoxPage.html");
+            htmlListbox.OpenHtmlPage("ListBoxPage.html");
 
             htmlListbox.SelectByText("cherry");
 

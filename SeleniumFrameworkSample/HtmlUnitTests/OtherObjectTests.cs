@@ -14,7 +14,7 @@ namespace SeleniumFrameworkV2Sample
         public void Click()
         {
             HtmlObjects.OtherObjectPage htmlOtherobject = new HtmlObjects.OtherObjectPage();
-            htmlOtherobject.OpenPage("/MainPage.html");
+            htmlOtherobject.OpenHtmlPage("MainPage.html");
 
             htmlOtherobject.buttonObj.Click();
 
@@ -27,7 +27,7 @@ namespace SeleniumFrameworkV2Sample
         public void GetSelectedElement()
         {
             HtmlObjects.OtherObjectPage htmlOtherobject = new HtmlObjects.OtherObjectPage();
-            htmlOtherobject.OpenPage("/MainPage.html");
+            htmlOtherobject.OpenHtmlPage("MainPage.html");
 
             string selected = htmlOtherobject.listboxObj.GetSelectedElement();
 
@@ -40,7 +40,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.OtherObjectPage htmlOtherobject = new HtmlObjects.OtherObjectPage();
 
-            htmlOtherobject.OpenPage("/MainPage.html");
+            htmlOtherobject.OpenHtmlPage("MainPage.html");
 
             htmlOtherobject.listboxObj.SelectByText("cherry");
 

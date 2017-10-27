@@ -8,7 +8,7 @@ namespace SeleniumFrameworkV2Sample
     [TestFixture]
     public class ReviewYourDoctorTests : WebDriverTestBase
     {
-     
+        // NOTE: url=https://www.healthgrades.com/doctor-reviews
         [Test]
         [Category("ReviewYourDoctorTests")]
         public void SearchDoctorReviews()

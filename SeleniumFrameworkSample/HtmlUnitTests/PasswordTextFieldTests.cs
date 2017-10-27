@@ -15,7 +15,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.PasswordTextField htmlPasswordtextfield = new HtmlObjects.PasswordTextField();
 
-            htmlPasswordtextfield.OpenPage("/PasswordTextFieldPage.html");
+            htmlPasswordtextfield.OpenHtmlPage("PasswordTextFieldPage.html");
 
             htmlPasswordtextfield.SetText("abcd");
 
@@ -30,7 +30,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.PasswordTextField htmlPasswordtextfield = new HtmlObjects.PasswordTextField();
 
-            htmlPasswordtextfield.OpenPage("/PasswordTextFieldPage.html");
+            htmlPasswordtextfield.OpenHtmlPage("PasswordTextFieldPage.html");
 
             htmlPasswordtextfield.ClearText();
 

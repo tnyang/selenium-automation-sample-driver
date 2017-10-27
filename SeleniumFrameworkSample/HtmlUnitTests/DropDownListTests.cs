@@ -15,7 +15,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.DropDownListPage htmlDropdownlist = new HtmlObjects.DropDownListPage();
 
-            htmlDropdownlist.OpenPage("/DropDownListPage.html");
+            htmlDropdownlist.OpenHtmlPage("DropDownListPage.html");
 
             string selected = htmlDropdownlist.GetSelectedElement();
            Assert.AreEqual(selected, "cat", "The dropdownlist GetSelectedElement() was value is wrong: " + selected + " expected: " + "cat");           
@@ -27,7 +27,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.DropDownListPage htmlDropdownlist = new HtmlObjects.DropDownListPage();
 
-            htmlDropdownlist.OpenPage("/DropDownListPage.html");
+            htmlDropdownlist.OpenHtmlPage("DropDownListPage.html");
 
             htmlDropdownlist.SelectByText("mouse");
 
@@ -41,7 +41,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.DropDownListPage htmlDropdownlist = new HtmlObjects.DropDownListPage();
 
-            htmlDropdownlist.OpenPage("/DropDownListPage.html");
+            htmlDropdownlist.OpenHtmlPage("DropDownListPage.html");
 
             System.Collections.Generic.List<string> animals = new System.Collections.Generic.List<string>(new string[] { "cat", "dog", "mouse" });
 

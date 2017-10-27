@@ -14,7 +14,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.CheckBoxPage htmlCheckbox = new HtmlObjects.CheckBoxPage();
 
-            htmlCheckbox.OpenPage("/CheckBoxPage.html");
+            htmlCheckbox.OpenHtmlPage("CheckBoxPage.html");
 
             bool selected = htmlCheckbox.IsChecked();
            Assert.AreEqual(selected, false, "The checkbox IsChecked() was value is wrong: " + selected + " expected: " + "false");           
@@ -26,7 +26,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.CheckBoxPage htmlCheckbox = new HtmlObjects.CheckBoxPage();
 
-            htmlCheckbox.OpenPage("/CheckBoxPage.html");
+            htmlCheckbox.OpenHtmlPage("CheckBoxPage.html");
 
             htmlCheckbox.Check();
 

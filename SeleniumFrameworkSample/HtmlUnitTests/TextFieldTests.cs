@@ -15,7 +15,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.TextField htmlTextfield = new HtmlObjects.TextField();
 
-            htmlTextfield.OpenPage("/TextFieldPage.html");
+            htmlTextfield.OpenHtmlPage("TextFieldPage.html");
 
             htmlTextfield.SetText("abcd");
 
@@ -30,7 +30,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.TextField htmlTextfield = new HtmlObjects.TextField();
 
-            htmlTextfield.OpenPage("/TextFieldPage.html");
+            htmlTextfield.OpenHtmlPage("TextFieldPage.html");
 
             string text = htmlTextfield.GetText();
 
@@ -43,7 +43,7 @@ namespace SeleniumFrameworkV2Sample
         {
             HtmlObjects.TextField htmlTextfield = new HtmlObjects.TextField();
 
-            htmlTextfield.OpenPage("/TextFieldPage.html");
+            htmlTextfield.OpenHtmlPage("TextFieldPage.html");
 
             htmlTextfield.ClearText();
 
