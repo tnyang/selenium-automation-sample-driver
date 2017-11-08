@@ -1,4 +1,5 @@
-﻿using Healthgrades.TestAutomation.SeleniumFramework.Core;
+﻿using Healthgrades.TestAutomation.SeleniumFramework.Configuration;
+using Healthgrades.TestAutomation.SeleniumFramework.Core;
 using SeleniumFrameworkV2Sample.Locators;
 using System;
 using System.IO;
