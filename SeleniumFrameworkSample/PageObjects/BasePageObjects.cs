@@ -16,8 +16,22 @@ namespace SeleniumFrameworkV2Sample.PageObjects
 
         #region Footer Element Objects
         public OtherObject loadingBar = new OtherObject("loadingBar", BaseLocators.loadingBarLocator);
-        
+
         #endregion
+
+
+        public void OpenPageBypassingModal(string pageUrl)
+        {
+            var providerProfilePage = new ProviderProfileObjects();
+
+            //Console.WriteLine(">>>>> GoToUrl: " + Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl);
+            //WebDriverTestBase.Driver.Navigate().GoToUrl(Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl + "?$.core.enableNewsletterModal = false");
+            WebDriverTestBase.Driver.Navigate().GoToUrl(Config.Settings.runTimeSettings.EnvironmentUrl + pageUrl + "?$.core.newsletterModalTriggers = ''");
+            //ClearLocalStorage();
+            //providerProfilePage.MoveToFooterSection();
+            //providerProfilePage.MoveToHamburger();
+            //providerProfilePage.ClickCloseNewsletterModalOnSignUpModal();           
+        }
 
         public void OpenPage(string pageUrl)
         {
