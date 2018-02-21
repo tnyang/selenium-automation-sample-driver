@@ -42,7 +42,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Healthgrades.TestAutomation.SeleniumFramework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.2.0.0-beta0006\lib\netstandard2.0\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
+      <HintPath>..\packages\Healthgrades.TestAutomation.SeleniumFramework.2.0.0-beta0008\lib\netstandard2.0\Healthgrades.TestAutomation.SeleniumFramework.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.6.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.6.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
@@ -168,6 +168,9 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="AppConfigs\test-config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="AppConfigs\appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
