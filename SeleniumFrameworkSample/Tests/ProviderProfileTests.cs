@@ -9,7 +9,7 @@ namespace SeleniumFrameworkV2Sample
     public class ProviderProfileTests : WebDriverTestBase
     {
 
-        [Test, Parallelizable]
+        [Test]
         [Category("SampleTest")]
         public void AssertVideoDisplaysOnProviderProfilePg()
         {
