@@ -140,7 +140,8 @@ function Run-Nunit {
         }
     } `
         | ForEach-Object { 
-        $resultFile = [System.IO.Path]::GetFileName($dllFileName + ".results.xml")    
+        $resultFile = [System.IO.Path]::GetFileName($dllFileName + ".results.xml")   
+
         & $nunit $_  --where="`"$Filter`"" 
         if ($LASTEXITCODE -ne 0) {
             throw "Tests failed"
