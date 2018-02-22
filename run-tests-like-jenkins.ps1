@@ -135,6 +135,7 @@ function Run-Nunit {
             $dllName = [System.IO.Path]::GetFileNameWithoutExtension($_.FullName) + ".dll"
             $dllFileName = (Join-Path -Path $_.DirectoryName -ChildPath "bin/$BuildConfiguration/$dllName")
             if (Test-Path -Path $dllFileName) {
+                write-host $dllFileName
                 $dllFileName
             }
         }
