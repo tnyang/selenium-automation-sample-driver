@@ -14,6 +14,7 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
+var projectName = "SeleniumFrameworkV2Sample";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
