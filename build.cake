@@ -15,7 +15,7 @@ var target = Argument("target", "Default");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
 var projectName = "SeleniumFrameworkV2Sample";
 var configuration = Argument("Configuration", (string)null) ?? EnvironmentVariable("Configuration") ?? "Release";
-var TestFilter = Argument("TestFilter", (string)null) ?? EnvironmentVariable("TestFilter") ?? "Test Category Filter is not set";
+var testFilter = Argument("TestFilter", (string)null) ?? EnvironmentVariable("TestFilter") ?? "Test Category Filter is not set";
 
 
 //////////////////////////////////////////////////////////////////////
@@ -137,7 +137,7 @@ Task("Run-NUnit-Tests")
 	var resultsFile = testResultsDirectory + File("result.xml");
     NUnit3(new [] {$"./{projectName}/bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
 	Results = new[] { new NUnit3Result { FileName = resultsFile } },
-	Where = testCategory
+	Where = testFilter
     });
 });
 
