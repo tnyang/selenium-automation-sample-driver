@@ -247,5 +247,5 @@ ModelManifest.xml
 /Results/ValidateSuccessfulLoginPositive2_FailureScreenshot-08111691118.jpg
 /Results/ValidateSuccessfulLoginNegative1_FailureScreenshot-081116143902.jpg
 
-/build-tools/*
-/tools/*
+build-tools
+tools
