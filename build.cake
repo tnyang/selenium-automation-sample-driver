@@ -14,7 +14,6 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
-var projectName = "SeleniumFrameworkV2Sample";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -132,7 +131,7 @@ Task("Run-NUnit-Tests")
     .Does(() =>
 {
 	var resultsFile = testResultsDirectory + File("result.xml");
-    NUnit3(new [] {$"./../../bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
+    NUnit3(new [] {$"./../../../bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
 	Results = new[] { new NUnit3Result { FileName = resultsFile } },
 	Where = "cat==SampleTest"
     });
