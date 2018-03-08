@@ -12,10 +12,10 @@
 //////////////////////////////////////////////////////////////////////
 
 var target = Argument("target", "Default");
-var configuration = Argument("configuration", "Release");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
 var projectName = "SeleniumFrameworkV2Sample";
 var testCategory = "cat==SampleTest";
+var configuration = Argument("configuration", "Release");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -45,6 +45,7 @@ Task("Clean")
     CleanDirectory(testResultsDirectory);
     CleanDirectory(buildLogDirectory);
 	Information("Build data files has been cleaned."); 
+	Information(configuration); 
 });
 
 
@@ -90,9 +91,6 @@ Task("Calculate-SemVer")
         if(exitCode != 0 ){
             throw new Exception("Unable to set build name");
         }
-		var test = Jenkins.Environment.GetEnvironmentString("Configuration");
-		Information("---------");
-		Information(test);
 	}
 		
 });
