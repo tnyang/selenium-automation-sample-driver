@@ -15,6 +15,7 @@ var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
 var projectName = "SeleniumFrameworkV2Sample";
+var testCategory = "cat==SampleTest";
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -89,6 +90,9 @@ Task("Calculate-SemVer")
         if(exitCode != 0 ){
             throw new Exception("Unable to set build name");
         }
+		var test = Jenkins.Environment.GetEnvironmentString("Configuration");
+		Information("---------");
+		Information(test);
 	}
 		
 });
@@ -134,7 +138,7 @@ Task("Run-NUnit-Tests")
 	var resultsFile = testResultsDirectory + File("result.xml");
     NUnit3(new [] {$"./{projectName}/bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
 	Results = new[] { new NUnit3Result { FileName = resultsFile } },
-	Where = "cat==SampleTest"
+	Where = testCategory;
     });
 });
 
