@@ -132,7 +132,7 @@ Task("Run-NUnit-Tests")
     .Does(() =>
 {
 	var resultsFile = testResultsDirectory + File("result.xml");
-    NUnit3(new [] {$"./bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
+    NUnit3(new [] {$"././bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
 	Results = new[] { new NUnit3Result { FileName = resultsFile } },
 	Where = "cat==SampleTest"
     });
