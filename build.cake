@@ -14,8 +14,9 @@
 var target = Argument("target", "Default");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
 var projectName = "SeleniumFrameworkV2Sample";
-var configuration = Argument("configuration", "Release");
-var testCategory = Argument("testCategory", "NO-TEST-CATEGORY-PASSED-IN");
+var configuration = Argument("Configuration", (string)null) ?? EnvironmentVariable("Configuration") ?? "Release";
+var TestFilter = Argument("TestFilter", (string)null) ?? EnvironmentVariable("TestFilter") ?? "Test Category Filter is not set";
+
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
