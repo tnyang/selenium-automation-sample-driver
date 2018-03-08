@@ -1,3 +1,0 @@
-﻿build-number: 0.1.0+92.Branch.master.Sha.eb36a2f651c83d8be459288ec6be43fccf66676f.
-commit-date: 2018-02-22
-build-date: Wed, 21 Feb 2018 17:19:15 GMT
