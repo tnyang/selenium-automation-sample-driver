@@ -19,5 +19,15 @@ namespace SeleniumFrameworkV2Sample
             Assert.IsTrue(providerProfilePage.isVideoPresent(),
                 "Video container didn't display on Provider Profile page");
         }
+        [Category("OCTOPUS")]
+        public void Octo1()
+        {
+            Assert.IsTrue(true);
+        }
+        [Category("OCTOPUS_TEST")]
+        public void Octo2()
+        {
+            Assert.IsTrue(true);
+        }
     }
 }
