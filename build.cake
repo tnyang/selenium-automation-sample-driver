@@ -14,8 +14,8 @@
 var target = Argument("target", "Default");
 var solutionFile = "Automation-FrameworkV2-Samples.sln";
 var projectName = "SeleniumFrameworkV2Sample";
-var testCategory = "cat==SampleTest";
 var configuration = Argument("configuration", "Release");
+var testCategory = Argument("testCategory", "NO-TEST-CATEGORY-PASSED-IN");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -136,7 +136,7 @@ Task("Run-NUnit-Tests")
 	var resultsFile = testResultsDirectory + File("result.xml");
     NUnit3(new [] {$"./{projectName}/bin/{configuration}/{projectName}.dll" }, new NUnit3Settings {
 	Results = new[] { new NUnit3Result { FileName = resultsFile } },
-	Where = testCategory;
+	Where = testCategory
     });
 });
 
