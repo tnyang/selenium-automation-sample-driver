@@ -169,6 +169,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="AppConfigs\appsettingsChrome.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="AppConfigs\test-config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
