@@ -1,5 +1,6 @@
 ﻿// HOW TO RUN: .\build.ps1 --settings_skipverification=true -target Run-Nunit-Tests
-//.\build.ps1 --testFilter="cat==SampleTest" --settings_skipverification=true -target "Run-Nunit-Tests" --appSettingsFile="appsettingsChrome"
+//             .\build.ps1 --settings_skipverification=true 
+//             .\build.ps1 --testFilter="cat==SampleTest" --settings_skipverification=true --appSettingsFile="appsettingsChrome"
 
 #tool nuget:?package=NUnit.ConsoleRunner&version=3.4.0
 #tool "nuget:?package=GitVersion.CommandLine&version=4.0.0-beta.13"
@@ -154,7 +155,7 @@ Task("Run-NUnit-Tests")
     });
 });
 
-Task("Debug")    
+Task("Default")
     .IsDependentOn("Run-NUnit-Tests")
     .Does(() =>
 {
