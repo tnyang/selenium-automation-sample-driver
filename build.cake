@@ -56,6 +56,7 @@ Task("Clean")
 
 Task("Calculate-SemVer")
     .IsDependentOn("Clean")
+	.IsDependentOn("Set-Env-Vars")
     .Does(()=>
 {
     ReplaceRegexInFiles("./**/AssemblyInfo.cs", "\\[assembly: Assembly.*Version.*\\]","");    
@@ -129,7 +130,7 @@ Task("Compile-Sources")
     settings.AddFileLogger(
         new MSBuildFileLogger{
             AppendToLogFile = true,
-            LogFile = buildLogDirectory + File("dotnet-build.log.txt")
+            LogFile = buildLogDirectory + File("msbuild-build.log.txt")
         });
     MSBuild(solutionFile, settings );
 });
@@ -137,14 +138,13 @@ Task("Compile-Sources")
 Task("Set-Env-Vars")    
     .Does(() =>
 {
-	if (Environment.GetEnvironmentVariable(appSettingsFile) == null ) Environment.SetEnvironmentVariable("HG_SELENIUM_FRAMEWORK_ENVIRONMENT", appSettingsFile);
+	Environment.SetEnvironmentVariable("HG_SELENIUM_FRAMEWORK_ENVIRONMENT", appSettingsFile);
 	Information("{0} - config will be used.", EnvironmentVariable("HG_SELENIUM_FRAMEWORK_ENVIRONMENT"));
 
 });
 
 Task("Run-NUnit-Tests")    
     .IsDependentOn("Compile-Sources")
-	.IsDependentOn("Set-Env-Vars")
     .Does(() =>
 {
 	var resultsFile = testResultsDirectory + File("result.xml");
