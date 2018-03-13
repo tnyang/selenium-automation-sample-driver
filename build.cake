@@ -154,7 +154,7 @@ Task("Run-NUnit-Tests")
     });
 });
 
-Task("Debug")    
+Task("Default")
     .IsDependentOn("Run-NUnit-Tests")
     .Does(() =>
 {
