@@ -1,5 +1,6 @@
 ﻿// HOW TO RUN: .\build.ps1 --settings_skipverification=true -target Run-Nunit-Tests
-//.\build.ps1 --testFilter="cat==SampleTest" --settings_skipverification=true -target "Run-Nunit-Tests" --appSettingsFile="appsettingsChrome"
+//             .\build.ps1 --settings_skipverification=true 
+//             .\build.ps1 --testFilter="cat==SampleTest" --settings_skipverification=true --appSettingsFile="appsettingsChrome"
 
 #tool nuget:?package=NUnit.ConsoleRunner&version=3.4.0
 #tool "nuget:?package=GitVersion.CommandLine&version=4.0.0-beta.13"
@@ -19,7 +20,7 @@ var solutionFile = "Automation-FrameworkV2-Samples.sln";
 var projectName = "SeleniumFrameworkV2Sample";
 var configuration = Argument("Configuration", (string)null) ?? EnvironmentVariable("Configuration") ?? "Release";
 var testFilter = Argument("TestFilter", (string)null) ?? EnvironmentVariable("TestFilter") ?? "cat=~ OCTOPUS.*";
-var appSettingsFile = Argument("appSettingsFile", (string)null) ?? EnvironmentVariable("HG_SELENIUM_FRAMEWORK_ENVIRONMENT") ?? "appsettings.json";
+var appSettingsFile = Argument("appSettingsFile", (string)null) ?? EnvironmentVariable("HG_SELENIUM_FRAMEWORK_ENVIRONMENT") ?? "appsettings";
 
 
 //////////////////////////////////////////////////////////////////////
